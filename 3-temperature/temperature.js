@@ -23,6 +23,24 @@
 //
 // 👇 WRITE YOUR CODE HERE 👇
 
+//Step One
+
+let chosenTemperatureInFahrenheit = prompt("What is the temperature in Fahrenheit that you want to convert to Celsius?");
+
 const convertFtoC = function (temp) {
 
+    // Step Two
+    let convertedTemperatureToCelsius = (chosenTemperatureInFahrenheit - 32) * 5 / 9 ;
+    
+    return convertedTemperatureToCelsius;
+
 }
+
+//step Three
+
+document.write(
+    "\""
+    + chosenTemperatureInFahrenheit 
+    + "°F converted to celsius is " 
+    + convertFtoC(chosenTemperatureInFahrenheit)
+    + "°C\"")

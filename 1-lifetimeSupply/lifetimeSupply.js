@@ -35,3 +35,25 @@
 //    Then test out your program with different numbers and snack!
 //
 // 👇 WRITE YOUR CODE HERE 👇
+
+// step One
+
+let snack = prompt("Name your favorite snack please (in Plural):");
+
+let numberOfItem = prompt("How many of " + snack + " would you be able to eat in a day ?");
+
+let ageOfUser = prompt('How old are you ?:');
+
+//step Two
+
+let lifeTimeSupplySnack = ((100 - ageOfUser) * 365) * numberOfItem ;
+
+// step Three
+
+document.write(
+    "\"Congratulations, you have won a lifetime suplly of " + snack + "! <br>"
+    + " You will receive " + numberOfItem + " " + snack + " per day, for a grand total of " + lifeTimeSupplySnack 
+    + " "
+    + snack + ".\""
+    
+    )
