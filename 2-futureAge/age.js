@@ -22,3 +22,23 @@
 //    Print your message to the browser using document.write()
 //
 // 👇 WRITE YOUR CODE HERE 👇
+
+// Step One
+
+let yearOfBirth = prompt("Please Enter Your Year Of Birth:");
+
+let futureYear =prompt("Please choose a year in the future:");
+
+//Step Two
+
+let firstPossibilyAge = futureYear - yearOfBirth;
+
+let secongPossibilyAge = firstPossibilyAge - 1;
+
+// Step three
+
+let AgeInFuture = "I will be either " + secongPossibilyAge + " or " + firstPossibilyAge + " in " + futureYear + "."; 
+
+// Step four
+
+document.write(AgeInFuture);
